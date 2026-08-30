@@ -1,8 +1,6 @@
-# 
+# dsh-wsl-clock
 
-DeepSeek Harness tool: **${tool}** — 
-
-DeepSeek Harness tool: **`clock_doctor`** — DeepSeek Harness tool: detect WSL clock drift versus Windows UTC.
+DeepSeek Harness tool: **`clock_doctor`** — detect WSL clock drift versus Windows UTC.
 
 Part of **[dsh-wsl-kit](https://github.com/173787247/dsh-wsl-kit)**.
 
@@ -28,9 +26,9 @@ Restart `dsh web`. New session → Tools should list `clock_doctor`.
 - id: dsh-wsl-clock
   name: dsh-wsl-clock
   config:
-        timeoutMs: 15000
-        maxSkewSec: 2
-        allowFix: false
+    timeoutMs: 15000
+    maxSkewSec: 2
+    allowFix: false
 ```
 
 | Key | Default | Meaning |

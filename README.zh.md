@@ -1,6 +1,4 @@
-# 
-
-DeepSeek Harness 工具：**${tool}** — 
+# dsh-wsl-clock
 
 DeepSeek Harness 工具：**`clock_doctor`** — 检测 WSL 相对 Windows 的时钟漂移。
 
@@ -28,9 +26,9 @@ dsh plugin --profile web add github:173787247/dsh-wsl-clock
 - id: dsh-wsl-clock
   name: dsh-wsl-clock
   config:
-        timeoutMs: 15000
-        maxSkewSec: 2
-        allowFix: false
+    timeoutMs: 15000
+    maxSkewSec: 2
+    allowFix: false
 ```
 
 | 键 | 默认 | 含义 |
