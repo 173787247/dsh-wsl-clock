@@ -1,4 +1,6 @@
-# dsh-wsl-clock
+# 
+
+DeepSeek Harness tool: **${tool}** — 
 
 DeepSeek Harness tool: **`clock_doctor`** — DeepSeek Harness tool: detect WSL clock drift versus Windows UTC.
 

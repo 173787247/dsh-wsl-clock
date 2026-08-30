@@ -1,4 +1,6 @@
-# dsh-wsl-clock
+# 
+
+DeepSeek Harness 工具：**${tool}** — 
 
 DeepSeek Harness 工具：**`clock_doctor`** — 检测 WSL 相对 Windows 的时钟漂移。
 
