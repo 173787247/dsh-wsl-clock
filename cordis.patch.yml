@@ -3,5 +3,4 @@
       name: dsh-wsl-clock
       config:
         timeoutMs: 15000
-        maxSkewSec: 2
-        allowFix: false
+        maxSkewSec: 30

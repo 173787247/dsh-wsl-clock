@@ -1,7 +1,7 @@
 {
   "name": "dsh-wsl-clock",
   "version": "0.1.0",
-  "description": "DeepSeek Harness tool: detect WSL clock drift versus Windows UTC.",
+  "description": "Detect WSL2 clock drift that breaks TLS and tokens after sleep.",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "test": "node --test test/clock.test.js"
+    "test": "node --test test/*.test.js"
   },
   "files": [
     "index.js",
@@ -25,17 +25,13 @@
     "cordis.patch.yml",
     "README.md",
     "README.zh.md",
-    "LICENSE",
-    "CHANGELOG.md",
-    "CONTRIBUTING.md"
+    "LICENSE"
   ],
   "keywords": [
     "dsh-plugin",
     "deepseek-harness",
     "wsl",
-    "clock",
-    "hwclock",
-    "time"
+    "clock"
   ],
   "dsh": {
     "bundle": {
