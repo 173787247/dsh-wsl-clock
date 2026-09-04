@@ -11,12 +11,13 @@ export function apply(ctx, config = {}) {
   ctx.systemPrompt.section({
     name: "tool:clock_doctor",
     order: 115,
-    text: "Use clock_doctor for WSL/Windows interop: Detect WSL2 clock drift that breaks TLS and tokens after sleep.",
+    text: "Use clock_doctor after laptop sleep or TLS/GitHub App JWT failures: compare WSL vs Windows UTC skew (warn/fail levels).",
   });
 
   ctx.tools.register({
     name: "clock_doctor",
-    description: "Detect WSL2 clock drift that breaks TLS and tokens after sleep.",
+    description:
+      "Detect WSL2 vs Windows clock skew (ok/warn/fail). Large skew breaks TLS and GitHub App tokens after sleep.",
     parameters: core.parameters(config),
     output: {
       schema: core.outputSchema(),

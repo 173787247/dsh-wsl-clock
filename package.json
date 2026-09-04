@@ -1,7 +1,7 @@
 {
   "name": "dsh-wsl-clock",
-  "version": "0.1.0",
-  "description": "Detect WSL2 clock drift that breaks TLS and tokens after sleep.",
+  "version": "0.2.0",
+  "description": "clock_doctor: WSL vs Windows UTC skew with ok/warn/fail for TLS and GitHub App JWTs.",
   "license": "MIT",
   "repository": {
     "type": "git",
