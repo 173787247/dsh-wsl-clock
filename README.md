@@ -22,3 +22,15 @@ npm test
 ```
 
 MIT
+
+## Where it sits
+
+Compares WSL and Windows UTC so TLS and GitHub App JWTs are not failing on skew.
+
+```mermaid
+flowchart LR
+  agent["dsh agent"] --> tool["clock_doctor"] --> clocks["WSL clock vs Windows UTC"]
+```
+
+Suite diagram and version snapshot: [dsh-wsl-kit](https://github.com/173787247/dsh-wsl-kit#how-the-pieces-fit). This plugin is **0.2.0** (full; also in llm). Do not copy that matrix into this README.
+

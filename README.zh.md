@@ -23,3 +23,15 @@ npm test
 ```
 
 MIT
+
+## 在套件里的位置
+
+对比 WSL 与 Windows 的 UTC，避免 TLS 或 GitHub App JWT 因时钟偏差失败。
+
+```mermaid
+flowchart LR
+  agent["dsh agent"] --> tool["clock_doctor"] --> clocks["WSL 时钟对比 Windows UTC"]
+```
+
+整套关系图和版本快照：[dsh-wsl-kit 中文说明](https://github.com/173787247/dsh-wsl-kit/blob/master/README.zh.md)。本插件是 **0.2.0**（full，也在 llm）。不要把那份总表抄进本 README。
+
